@@ -338,6 +338,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58a180265d409847b083fecc57204f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xSize: 50
+  zSize: 50
+  pointStep: 0.2
+  vertices: []
 --- !u!4 &1087743776
 Transform:
   m_ObjectHideFlags: 0

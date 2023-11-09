@@ -51,12 +51,12 @@ public class PlaneGeneration : MonoBehaviour
         {
             for (int z = 0; z < zSize - 1; z++)
             {
-                triangles[trianglesCount] = x * zSize + z;
-                triangles[trianglesCount + 1] = (x+1) * zSize + z;
+                triangles[trianglesCount] = (x + 1) * zSize + z;
+                triangles[trianglesCount + 1] = x * zSize + z;
                 triangles[trianglesCount + 2] = x * zSize + z + 1;
                 triangles[trianglesCount + 3] = x * zSize + z + 1;
-                triangles[trianglesCount + 4] = (x + 1) * zSize + z;
-                triangles[trianglesCount + 5] = (x + 1) * zSize + z + 1;
+                triangles[trianglesCount + 4] = (x + 1) * zSize + z + 1;
+                triangles[trianglesCount + 5] = (x + 1) * zSize + z;
                 trianglesCount += 6;
             }
         }
